@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Organization Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <h1>My Organization</h1>
+    <ul>
+      <li onclick="scrollToSection('home')">Home</li>
+      <li onclick="scrollToSection('events')">Events</li>
+      <li onclick="scrollToSection('news')">News</li>
+      <li onclick="scrollToSection('forms')">Register</li>
+      <li onclick="scrollToSection('forms')">Contact</li>
+    </ul>
+  </nav>
+
+  <!-- Welcome Section -->
+  <section id="home">
+    <h2>Welcome to Our Platform</h2>
+    <p class="center-text">
+      We warmly welcome you to our organization. Explore upcoming events, news, and connect with us.
+    </p>
+
+    <div class="welcome-images">
+      <img src="https://placehold.co/400x250" alt="Welcome">
+      <img src="https://placehold.co/400x250" alt="Welcome">
+      <img src="https://placehold.co/400x250" alt="Welcome">
+    </div>
+  </section>
+
+  <!-- Events -->
+  <section id="events">
+    <h3>Calendar & Events</h3>
+    <div class="card-container">
+      <div class="card">
+        <h4>Workshop</h4>
+        <p>Date: Coming Soon</p>
+      </div>
+      <div class="card">
+        <h4>Seminar</h4>
+        <p>Date: Coming Soon</p>
+      </div>
+      <div class="card">
+        <h4>Community Meetup</h4>
+        <p>Date: Coming Soon</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- News -->
+  <section id="news">
+    <h3>News & Media</h3>
+    <div class="card-container">
+      <div class="card">
+        <img src="https://placehold.co/400x200" alt="News">
+        <h4>News Title 1</h4>
+        <p>Short news description.</p>
+      </div>
+      <div class="card">
+        <img src="https://placehold.co/400x200" alt="News">
+        <h4>News Title 2</h4>
+        <p>Short news description.</p>
+      </div>
+      <div class="card">
+        <img src="https://placehold.co/400x200" alt="News">
+        <h4>News Title 3</h4>
+        <p>Short news description.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Forms -->
+  <section id="forms">
+    <h3>Registration, Enquiry & Feedback</h3>
+
+    <div class="card-container">
+      <div class="card">
+        <h4>Registration</h4>
+        <form onsubmit="handleForm(event, 'Registration')">
+          <input type="text" placeholder="Name" required>
+          <input type="email" placeholder="Email" required>
+          <button type="submit">Register</button>
+        </form>
+      </div>
+
+      <div class="card">
+        <h4>Enquiry</h4>
+        <form onsubmit="handleForm(event, 'Enquiry')">
+          <input type="text" placeholder="Subject" required>
+          <textarea placeholder="Your enquiry" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+
+      <div class="card">
+        <h4>Feedback</h4>
+        <form onsubmit="handleForm(event, 'Feedback')">
+          <textarea placeholder="Your feedback" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 My Organization. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+``
