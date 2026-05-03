@@ -8,3 +8,4 @@ function handleForm(event, type) {
   event.preventDefault();
   alert(type + " form submitted successfully!");
 }
+Add Sound effect
