@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/download (2).jpg">
+    
+</head>
+<body>
+    <header>
+    <img src="img/Football.jpg">
+    <h1 id="head">Apu Football Club</h1>
+    </header>
+
+    <nav>
+    
+        <ul>
+        <li id="active"><a href="home.html">Home</a></li>
+        <li><a href="event.html">Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="calender.html">Calender</a></li>
+        <li style="float: right;"><a href="about.html">About</a></li>
+        
+    </ul>
+    
+</nav>
+<div class="card">
+        <h1>Contact</h1>
+        <div class="formsgrid">
+            <div class="formscard">
+        <h2>Registration</h2>
+        <form onsubmit="return handleForm()">
+        <p>Name:</p>
+          <input type="text" placeholder="Name" required>
+          <br>
+          <P>Email:</P>
+          <input type="email" placeholder="Email" required>
+          <button type="submit" id="buttonform">Register</button>
+        </form>
+      </div>
+
+      <div class="formscard">
+        <h2>Feedback</h2>
+        <form onsubmit="return handleForm()">
+            <p>Give Feedback Here:</p>
+          <textarea placeholder="Your feedback" required></textarea>
+          <button type="submit" id="buttonform">Send</button>
+
+        </form>
+        
+        </div>
+      </div>
+      <footer>
+    © 2026 Apu Football Club. All rights reserved.
+  </footer>
+    </div>
+    
+  </section>
+
+<script src="script.js"></script>
+</body>
+</html>

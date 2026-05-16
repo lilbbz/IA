@@ -1,11 +1,7 @@
-function scrollToSection(id) {
-  document.getElementById(id).scrollIntoView({
-    behavior: "smooth"
-  });
+function gotopage(){
+    window.location.href="contact.html";
 }
-
-function handleForm(event, type) {
-  event.preventDefault();
-  alert(type + " form submitted successfully!");
+function handleForm(){
+    alert("✅ Submitted successfully!");
+    return false;
 }
-Add Sound effect
